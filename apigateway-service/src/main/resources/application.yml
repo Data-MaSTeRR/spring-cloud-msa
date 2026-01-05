@@ -21,6 +21,12 @@ spring:
                 - Path=/second-service/**
               filters:
                 - CustomFilter
+          default-filters:
+            - name: GlobalFilter
+              args:
+                baseMessage: Spring Cloud Gateway Webflux Global Filter
+                preLogger: true
+                postLogger: true
 
 eureka:
   client:
