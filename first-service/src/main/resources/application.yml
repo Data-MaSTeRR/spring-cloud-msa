@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: my-first-service
+    name: my-first-service # Eureka에 등록되는 서비스 이름
 
 eureka:
   client:
